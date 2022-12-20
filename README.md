@@ -23,53 +23,54 @@ the uthreads.h header file.
   
 * __API__
 
-int uthread_init(int quantum_usecs)
 
-  _This function initializes the thread library._
+  int uthread_init(int quantum_usecs)
 
-
-int uthread_spawn(void (*f)(void))
-
-  _This function creates a new thread._
+  * _This function initializes the thread library._
 
 
-int uthread_terminate(int tid)
+  int uthread_spawn(void (*f)(void))
 
-  _This function terminates the thread with ID tid and deletes it from all relevant control structures._
-
-
-int uthread_block(int tid)
-
-  _This function blocks the thread with ID tid._
+  * _This function creates a new thread._
 
 
-int uthread_resume(int tid)
+  int uthread_terminate(int tid)
 
-  _This function resumes a blocked thread with ID tid and moves it to the READY state._
-
-
-int uthread_mutex_lock()
-
-  _This function tries to acquire a mutex._
+  * _This function terminates the thread with ID tid and deletes it from all relevant control structures._
 
 
-int uthread_mutex_unlock()
+  int uthread_block(int tid)
 
-  _This function releases a mutex._
-
-
-int uthread_get_tid()
-
-  _This function returns the thread ID of the calling thread._
+  * _This function blocks the thread with ID tid._
 
 
-int uthread_get_total_quantums()
+  int uthread_resume(int tid)
 
-  _This function returns the total number of quantums that were started since the library was
+  * _This function resumes a blocked thread with ID tid and moves it to the READY state._
+
+
+  int uthread_mutex_lock()
+
+  * _This function tries to acquire a mutex._
+
+
+  int uthread_mutex_unlock()
+
+  * _This function releases a mutex._
+
+
+  int uthread_get_tid()
+
+  * _This function returns the thread ID of the calling thread._
+
+
+  int uthread_get_total_quantums()
+
+  * _This function returns the total number of quantums that were started since the library was
   initialized, including the current quantum._
 
 
-int uthread_get_quantums(int tid)
+  int uthread_get_quantums(int tid)
 
-  _This function returns the number of quantums the thread with ID tid was in RUNNING state._
+  * _This function returns the number of quantums the thread with ID tid was in RUNNING state._
 
