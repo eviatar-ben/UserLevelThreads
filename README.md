@@ -1,6 +1,6 @@
 # User Level Threads
-A functional static library, that creates and manages userlevel threads.
-A potential user will be able to include your library and use it according to the package’s public interface:
+A functional static library, that creates and manages user-level threads.
+A potential user will be able to include the library and use it according to the package’s public interface:
 the uthreads.h header file.
 
 * __The Threads__
