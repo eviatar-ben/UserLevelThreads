@@ -3,7 +3,7 @@ A functional static library, that creates and manages user-level threads.
 
 A potential user will be able to include the library and use it according to the package’s public interface:
 
-the uthreads.h header file.
+The uthreads.h header file.
 
 * __The Threads__
 
